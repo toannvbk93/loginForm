@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 		    <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <script>
+            function checkValue(){
+              var login_username = document.getElementById('login_username');
+              var login_password = document.getElementById('login_password');
+              if(login_username.value == ""){
+                document.getElementById('null_login_name').innerHTML = "Enter username";
+                document.getElementById('null_login_name').style.fontSize="10px";
+                document.getElementById('null_login_name').style.color = "red";
+              }else {
+                document.getElementById('null_login_name').innerHTML = "";
+              }
+              if(login_password.value == ""){
+                document.getElementById('null_login_password').innerHTML = "Enter password";
+                document.getElementById('null_login_password').style.fontSize="10px";
+                document.getElementById('null_login_password').style.color = "red";
+              }else {
+                document.getElementById('null_login_password').innerHTML = "";
+              }
+            }
+        </script>
     </head>
     <body>
         <!-- Top content -->
@@ -34,13 +52,15 @@
 				                    <form role="form" action="" method="post" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-				                        </div>
+				                        	<input id="login_username" type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+                                  <p id="null_login_name"></p>
+                                </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-				                        </div>
-				                        <button type="submit" class="btn">Sign in!</button>
+				                        	<input id="login_password" type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+                                  <p id="null_login_password"></p>
+                                </div>
+				                        <button type="submit" class="btn" onclick="checkValue()">Sign in!</button>
 				                    </form>
 			                    </div>
 		                    </div>
@@ -93,7 +113,6 @@
         			<div class="col-sm-8 col-sm-offset-2">
         				<div class="footer-border"></div> <i class="fa fa-smile-o"></i></p>
         			</div>
-
         		</div>
         	</div>
         </footer>
