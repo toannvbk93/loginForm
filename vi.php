@@ -11,7 +11,7 @@ $lang['5'] =  "Chưa nhập mật khẩu đó bạn ơi!";
 $lang['6'] =  "Lỗi: Tên đã có người sử dụng.";
 $lang['7'] =  "Tên tài khoản không được chứa ký tự đặc biệt.";
 $lang['8'] =  "Tên tài khoản phải có ít nhất 2 ký tự";
-$lang['9'] =  "Gia nhập codehaivl2015.com - Thêm bạn thêm vui";
+$lang['9'] =  "Gia nhập - Thêm bạn thêm vui";
 $lang['10'] =  "Bạn đã có tài khoản? ";
 $lang['11'] =  "Đăng nhập codehaivl2015.com";
 $lang['12'] =  "Chào mừng bạn đến với codehaivl2015.com - chia sẻ niềm vui.";
@@ -170,7 +170,7 @@ $lang['164'] =  "ngày trước";
 $lang['165'] =  "Bình luận";
 $lang['166'] =  "Mới hơn";
 $lang['167'] =  "Cũ hơn";
-$lang['168'] =  "Xem codehaivl2015.com Like A Boss!";
+$lang['168'] =  "Xem Like A Boss!";
 $lang['169'] =  "Mẹo:";
 $lang['170'] =  " Bấm 'J' hoặc 'K' để chuyển bài nhanh.";
 $lang['171'] =  "Tip-Press-2";
@@ -342,5 +342,7 @@ $lang['327'] =  "Xóa bỏ";
 $lang['328'] =  "Hoàn thành";
 $lang['329'] =  "Chế ảnh tại";
 $lang['330'] =  "Event";
+$lang['331'] =  "Thông tin tài khoản không chính xác";
+$lang['332'] =  "Không được bỏ trống";
 
 ?>
