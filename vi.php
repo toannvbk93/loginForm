@@ -343,6 +343,6 @@ $lang['328'] =  "Hoàn thành";
 $lang['329'] =  "Chế ảnh tại";
 $lang['330'] =  "Event";
 $lang['331'] =  "Thông tin tài khoản không chính xác";
-$lang['332'] =  "Không được bỏ trống";
+$lang['332'] =  "Không được bỏ trống!";
 
 ?>
